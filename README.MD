@@ -105,20 +105,7 @@ Designed with accessibility in mind for diverse regions and linguistic backgroun
 - Git
 - Google Translate API key (optional for offline mode)
 
-### Quick Start
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/image-multilingual-assistant.git
-cd image-multilingual-assistant
-
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Optional: Add environment config
-echo "TRANSLATE_API_KEY=your_api_key_here" > .env
-
+### 🌐 Acknowledgements
+- HuggingFace, OpenAI, Google Translate
+- CLIP, LLaVA, DeepSeek, Mistral
+- Streamlit + Indian language NLP community
