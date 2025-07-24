@@ -76,7 +76,6 @@ Designed with accessibility in mind for diverse regions and linguistic backgroun
 ## 🚀 Development Phases
 
 ### ✅ Phase 1: Image Upload + Multilingual RAG  
-**Lead:** Aarya | **Deadline:** Aug 1, 2025  
 - Image input + preprocessing  
 - Multimodal embedding using CLIP  
 - Basic LLM-powered RAG logic  
@@ -85,8 +84,7 @@ Designed with accessibility in mind for diverse regions and linguistic backgroun
 
 ---
 
-### ✅ Phase 2: Streamlit Interface  
-**Lead:** Raj | **Deadline:** Aug 4, 2025  
+### ✅ Phase 2: Streamlit Interface 
 - Build multilingual image chat interface  
 - Include file uploader, language selector, text chat  
 ✅ **Deliverable:** Web app that allows image-driven multilingual Q&A
@@ -94,40 +92,33 @@ Designed with accessibility in mind for diverse regions and linguistic backgroun
 ---
 
 ### ✅ Phase 3: Dataset Expansion + Evaluation  
-**Lead:** Sana | **Deadline:** Aug 7, 2025  
 - Add regional language datasets for testing  
 - Evaluate accuracy across multiple Indian scripts  
 ✅ **Deliverable:** Verified results and performance insights
 
 ---
 
-## 🗂️ Project Structure
+## 🛠️ Installation & Setup
 
-image-multilingual-assistant/
-├── main.py # CLI interface
-├── requirements.txt # Dependencies
-├── README.md # Documentation
-├── .env # API keys (if any)
-│
-├── modules/
-│ ├── image_processor.py # Resize, preprocess images
-│ ├── embedder.py # Generate image embeddings
-│ ├── rag_pipeline.py # Search + answer generation
-│ ├── multilingual.py # Translation + language detection
-│ └── llm_query.py # Interface to LLMs
-│
-├── frontend/
-│ ├── streamlit_ui.py # Main Streamlit app
-│ ├── chat_components.py # Chat display
-│ └── language_selector.py # Dropdown interface
-│
-├── tests/ # Unit tests
-│ └── test_rag_pipeline.py
-│
-├── sample_data/ # Sample images + questions
-└── assets/ # Static resources, demo images
+### Prerequisites
+- Python 3.8+
+- Git
+- Google Translate API key (optional for offline mode)
 
-yaml
-Copy
-Edit
- --
+### Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/image-multilingual-assistant.git
+cd image-multilingual-assistant
+
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Optional: Add environment config
+echo "TRANSLATE_API_KEY=your_api_key_here" > .env
+
