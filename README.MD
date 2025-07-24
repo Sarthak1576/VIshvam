@@ -103,3 +103,31 @@ Designed with accessibility in mind for diverse regions and linguistic backgroun
 
 ## 🗂️ Project Structure
 
+image-multilingual-assistant/
+├── main.py # CLI interface
+├── requirements.txt # Dependencies
+├── README.md # Documentation
+├── .env # API keys (if any)
+│
+├── modules/
+│ ├── image_processor.py # Resize, preprocess images
+│ ├── embedder.py # Generate image embeddings
+│ ├── rag_pipeline.py # Search + answer generation
+│ ├── multilingual.py # Translation + language detection
+│ └── llm_query.py # Interface to LLMs
+│
+├── frontend/
+│ ├── streamlit_ui.py # Main Streamlit app
+│ ├── chat_components.py # Chat display
+│ └── language_selector.py # Dropdown interface
+│
+├── tests/ # Unit tests
+│ └── test_rag_pipeline.py
+│
+├── sample_data/ # Sample images + questions
+└── assets/ # Static resources, demo images
+
+yaml
+Copy
+Edit
+ --
